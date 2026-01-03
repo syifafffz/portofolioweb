@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syifa | Portfolio</title>
+
+  <!-- FONT AWESOME (WAJIB) -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- CSS kamu -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f5ef;
+    }
+
+    .navbar-custom {
+      background: linear-gradient(to right, #ffd7a8, #ffbf70);
+      border-radius: 16px;
+      margin: 20px;
+    }
+
+    .hero-img {
+      width: 300px;
+      border-radius: 60% 40% 50% 50%;
+      border: 8px solid #ad5a07;
+    }
+
+    .btn-main {
+      background: #7a4a00;
+      color: rgb(252, 247, 247);
+    }
+
+    .btn-main:hover {
+      background: #5c3700;
+      color: white;
+    }
+
+    .progress-bar {
+      background-color: #a78bfa;
+    }
+
+    .contact-box {
+      background: #f4cf9f;
+      border-radius: 16px;
+    }
+  </style>
+</head>
+<script>
+const contact = document.querySelector('.animate-contact');
+window.addEventListener('scroll', () => {
+  const top = contact.getBoundingClientRect().top;
+  if(top < window.innerHeight - 100){
+    contact.classList.add('visible');
+  }
+});
+</script>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom px-5 py-3">
+  <a class="navbar-brand fw-bold" href="#home">Syifa</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+
+  <div class="collapse navbar-collapse justify-content-center">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section class="container py-5 home-section"id="home">
+
+  <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+
+    <!-- FOTO -->
+    <img src="asset/profile.jpeg" alt="Profile"
+         class="hero-img img-fluid">
+
+    <!-- TEKS & IKON -->
+    <div class="profile-content">
+
+<h2 class="mb-1">
+  Hey I’m <span class="text-warning fw-bold">Syifa Fauziah</span>
+</h2>
+
+<p class="text-warning mb-2">
+  Student, Administrative Staff, Content Creator
+</p>
+
+
+      <div class="mb-2">
+        <a href="mailto:syifafau80@gmail.com" class="contact-link d-block">
+          🌐 syifafau80@gmail.com
+        </a>
+        <a href="tel:+6283874067290" class="contact-link d-block">
+          📘 +62 8387 4067 290
+        </a>
+      </div>
+
+      <div class="d-flex gap-3 mt-2">
+        <a href="https://www.instagram.com/syffouzia" class="social-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@syfcrumbs" class="social-icon">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://youtube.com/@syfbambi" class="social-icon">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#" class="social-icon">
+          <i class="fa-brands fa-pinterest"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="container py-5" id="about">
+
+  <div class="row mb-4">
+    <!-- ABOUT TEXT -->
+    <div class="col-md-6">
+      <h2>About</h2>
+      <p>
+        An Information Systems student at Pamulang University, a content creator,
+        and a company administrator focused on digital content management,
+        administrative tasks, and professional communication.
+        Creative, detail-oriented, and eager to grow in the digital world.
+      </p>
+    </div>
+
+    <!-- SKILLS BAR -->
+    <div class="col-md-6">
+      <label class="fw-medium">Digital Literacy</label>
+      <div class="progress mb-3" style="height:6px;">
+        <div class="progress-bar rounded-pill" style="width:100%"></div>
+      </div>
+
+      <label class="fw-medium">Content Planning & Scheduling</label>
+      <div class="progress mb-3" style="height:6px;">
+        <div class="progress-bar rounded-pill" style="width:80%"></div>
+      </div>
+
+      <label class="fw-medium">Data Analysis</label>
+      <div class="progress mb-3" style="height:6px;">
+        <div class="progress-bar rounded-pill" style="width:85%"></div>
+      </div>
+
+      <label class="fw-medium">Digital Communication</label>
+      <div class="progress mb-3" style="height:6px;">
+        <div class="progress-bar rounded-pill" style="width:90%"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILL CARDS -->
+  <div class="row g-4">
+    <div class="col-6 col-md-3">
+      <div class="card h-100 text-center p-3">
+        <div class="icon mb-2">📘</div>
+        <h5>Digital Literacy</h5>
+        <p class="small">
+          Strategic content management focused on optimal results.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="card h-100 text-center p-3">
+        <div class="icon mb-2">📝</div>
+        <h5>Content Planning</h5>
+        <p class="small">
+          Organizing content strategies and schedules.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="card h-100 text-center p-3">
+        <div class="icon mb-2">📊</div>
+        <h5>Data Analysis</h5>
+        <p class="small">
+          Analyzing data to generate insights.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="card h-100 text-center p-3">
+        <div class="icon mb-2">💬</div>
+        <h5>Digital Communication</h5>
+        <p class="small">
+          Effective digital communication.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- PROJECTS 01-->
+<section class="container">
+<section class="project dark"id="projects">
+  <div class="project-header">
+    <span>Syifa</span>
+    <span>Gallery 01</span>
+    <span>Student</span>
+  </div>
+
+  <div class="project-content">
+    <div class="project-text">
+      <h1>PROJECT 01 <span>*</span></h1>
+      <h2> student at Pamulang University</h2>
+      <p>
+        As an Information Systems student, I have worked on several academic and non-academic projects, including the development of a portfolio website and participation in community service activities. These projects have helped me strengthen my technical skills, communication abilities, and problem-solving skills.
+      </p>
+    </div>
+
+<div class="project-images d-flex flex-wrap gap-2">
+  <img src="asset/img1.jpeg" class="img-fluid" alt="">
+</div>
+  </div>
+</section>
+
+<!-- PROJECT 02 -->
+<section class="project light">
+  <div class="project-header">
+    <span>Syifa</span>
+    <span>Gallery 02</span>
+    <span>Staff</span>
+  </div>
+
+  <div class="project-content">
+  <div class="project-text">
+    <h1>PROJECT 02 <span>*</span></h1>
+    <h2>Administrative Staff</h2>
+     <p>
+        ERP & JAVA
+     </p>
+  </div>
+
+<div class="project-images d-flex flex-wrap gap-2">
+  <img src="asset/img5.jpeg" class="img-fluid" alt="">
+</div>
+  </div>
+</section>
+
+
+<!-- PROJECTS 03-->
+<section class="container">
+<section class="project dark">
+  <div class="project-header">
+    <span>Syifa</span>
+    <span>Gallery 03</span>
+    <span>Content creator</span>
+  </div>
+
+  <div class="project-content">
+    <div class="project-text">
+      <h1>PROJECT 03 <span>*</span></h1>
+      <h2>content</h2>
+      <p>
+        This content originated from my hobby of watching short videos and taking photos. I like places with photo spots, and then I proceed to edit photos or videos using some tools I use (CapCut, PicsArt, Dazz Cam, or edit directly from the phone gallery).
+      </p>
+    </div>
+
+<div class="project-images d-flex flex-wrap gap-2">
+  <img src="asset/img6.jpeg" class="img-fluid" alt="">
+</div>
+  </div>
+
+</section>
+<!-- contact-->
+<section class="container py-5"id="contact">
+  <div class="contact-box p-5 row align-items-center animate-contact">
+    <div class="col-md-6 text-area">
+      <h3>If you like what you see,<br>let’s give feedback.</h3>
+    </div>
+
+    <div class="col-md-6 form-area">
+      <input class="form-control mb-2" placeholder="Name *">
+      <input class="form-control mb-2" placeholder="Email *">
+      <textarea class="form-control mb-2" placeholder="Message *"></textarea>
+      <button class="btn btn-main">Send message</button>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-3">
+  © 2025 Syifa. All rights reserved.
+</footer>
+
+</body>
+</html>
